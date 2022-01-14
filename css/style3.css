@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* font */
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+ }
+ 
+ @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+ }
+ 
+ @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+ }
+ 
+ .nanumbarungothic * {
+  font-family: 'NanumBarunGothic', sans-serif;
+ }
+
+
+*{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+a{text-decoration: none; color:#9fa2ad}
+
+/* contents */
+#contents>div{height:100vh;}
+
+/* maintitle */
+
+.maintitle {
+  width:60%;
+  height:190px;
+  color: #eef;
+  display: flex;
+  font-size: 70px;
+  position: absolute;
+  left: 57%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.maintitle > * {
+  animation: turn 10s ease-in;
+  display: inline-block;
+  font-family: Helvetica;
+  font-weight: normal;
+  letter-spacing:10px;
+  text-shadow: 0 0 .5rem #def;
+  transform: scaleY(1);
+}
+
+@keyframes turn {
+  0% {
+    text-shadow: 0 0 0 #def;
+    transform: scaleY(1) rotateY(90deg);
+    
+  }
+  100% {
+    text-shadow: 0 0 .5rem #def;
+    transform: scaleY(1) rotateY(0);
+    
+  }
+
+}
+
+
+.maintitle2 {
+  width:60%;
+  height:190px;
+  color: #eef;
+  display: flex;
+  font-size: 70px;
+  position: absolute;
+  left: 57%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.maintitle2 > * {
+  animation: turn 10s ease-in;
+  display: inline-block;
+  font-family: helvetica;
+  font-weight: normal;
+  letter-spacing:10px;
+  text-shadow: 0 0 .5rem #def;
+  transform: scaleY(1);
+}
+
+@keyframes turn {
+  0% {
+    text-shadow: 0 0 0 #def;
+    transform: scaleY(1) rotateY(90deg);
+    
+  }
+  100% {
+    text-shadow: 0 0 .5rem #def;
+    transform: scaleY(1) rotateY(0);
+    
+  }
+
+}
+
+
+
+/* section */
+#section1{background-color: black;}
+
+#section2{background-color:black; display: flex; justify-content: center;
+          position:relative;}
+
+.part{width:50%; height:500px; font-size: 2.2vh; 
+  display: flex; 
+  position:absolute;
+  bottom:25%;
+  font-family: 'NanumBarunGothic', sans-serif;
+  color:white;
+}
+
+
+#section3{background: linear-gradient(#f4f4f4 , white); 
+  display: flex; justify-content: space-evenly; align-items: center;}
+#section3 img{width:100%; height:100%; }
+.profilebox{width:500px; height:100%; 
+background: linear-gradient(#f4f4f4 , white);
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+/* position: relative; */
+flex-direction: column;}
+.profileimg{width:350px; height:350px;
+   border-radius: 1000px;
+   overflow: hidden;
+   box-shadow:inset 2px 2px 5px #BABECC, inset -2px 0px 5px #fff;
+   }
+.profileimg img{width:100%; height:auto;}
+.name{width:250px; height:50px; font-family: 'S-CoreDream-3Light';
+  text-transform: uppercase;
+  text-align: left;
+  color:black;
+ }
+
+.textbox {width:250px; height:210px; }
+.textbox p {font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 17px;
+            letter-spacing: 1px;
+            line-height:40px;
+            color:black;
+            text-align: left;
+            }
+     
+.resume{width:70%; height: 80%; 
+  display: flex; justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.resumebox{width:560px; height:300px; 
+  font-family: 'Be Vietnam Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height:40px;
+}
+.resumebox h1{color:black;}
+.resumebox p{color:black;}
+
+.line {width:80%; height:2px; background-color: black;}
+
+.subbox{width:400px; height:300px; 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+
+.skills{width:100px; height:100px; 
+  display: flex;
+  justify-content: flex-start;
+  }
+.skills>img{max-width:60px; max-height:60px;}
+
+#section4{display: flex; flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+.box{width:400px; height:400px;
+  overflow: hidden; 
+  position:relative;
+  background-color:azure;}
+.box img{width:150%; height:auto; position:absolute; top:-5%; left:-25%;}
+
+#section5{display: flex; flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+
+#section6{display: flex; flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:gold;}
+
