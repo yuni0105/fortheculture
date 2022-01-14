@@ -35,6 +35,11 @@
   font-family: 'NanumBarunGothic', sans-serif;
  }
 
+ @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
 
 *{margin:0; padding:0;}
 ul,li,ol{list-style:none;}
@@ -52,7 +57,7 @@ a{text-decoration: none; color:#9fa2ad}
   display: flex;
   font-size: 70px;
   position: absolute;
-  left: 57%;
+  left: 63%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -89,7 +94,7 @@ a{text-decoration: none; color:#9fa2ad}
   display: flex;
   font-size: 70px;
   position: absolute;
-  left: 57%;
+  left: 63%;
   top: 60%;
   transform: translate(-50%, -50%);
 }
@@ -126,12 +131,14 @@ a{text-decoration: none; color:#9fa2ad}
 #section2{background-color:black; display: flex; justify-content: center;
           position:relative;}
 
-.part{width:50%; height:500px; font-size: 2.2vh; 
+.part{width:60%; height:500px; font-size: 2.2vh; 
   display: flex; 
+  justify-content: space-evenly;
   position:absolute;
-  bottom:25%;
-  font-family: 'NanumBarunGothic', sans-serif;
+  bottom:15%;
+  font-family: 'Noto Sans KR', sans-serif;
   color:white;
+
 }
 
 
@@ -139,61 +146,110 @@ a{text-decoration: none; color:#9fa2ad}
   display: flex; justify-content: space-evenly; align-items: center;}
 #section3 img{width:100%; height:100%; }
 .profilebox{width:500px; height:100%; 
-background: linear-gradient(#f4f4f4 , white);
+/* background: linear-gradient(#f4f4f4 , white); */
 display: flex;
 justify-content:space-evenly;
 align-items: center;
 /* position: relative; */
-flex-direction: column;}
-.profileimg{width:350px; height:350px;
-   border-radius: 1000px;
+flex-direction: column;
+
+}
+.profileimg{width:300px; height:400px;
    overflow: hidden;
-   box-shadow:inset 2px 2px 5px #BABECC, inset -2px 0px 5px #fff;
+   
    }
-.profileimg img{width:100%; height:auto;}
-.name{width:250px; height:50px; font-family: 'S-CoreDream-3Light';
+.profileimg img{width:300px; height:auto;}
+.name{width:300px; height:50px;  font-family: 'Noto Sans KR', sans-serif;
+  font-size:30px;
   text-transform: uppercase;
+  letter-spacing: -2px;
   text-align: left;
   color:black;
+ 
+  
  }
+ .small{font-size: 15px;
+  letter-spacing:0px;
+  }            
+ 
 
-.textbox {width:250px; height:210px; }
-.textbox p {font-family: 'Be Vietnam Pro', sans-serif;
+.textbox {width:300px; height:350px;  }
+.textbox p {font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 300;
             font-size: 17px;
             letter-spacing: 1px;
             line-height:40px;
             color:black;
             text-align: left;
             }
-     
-.resume{width:70%; height: 80%; 
+
+.resume{width:60%; height: 70%; 
   display: flex; justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .resumebox{width:560px; height:300px; 
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  font-size: 17px;
+  letter-spacing: 1px;
   line-height:40px;
 }
-.resumebox h1{color:black;}
-.resumebox p{color:black;}
+.h{font-size: 20px;}
+.resumebox p{color:black; font-family: 'Noto Sans KR', sans-serif;}
 
-.line {width:80%; height:2px; background-color: black;}
+.line {width:50%; height:2px; background-color: black;}
 
-.subbox{width:400px; height:300px; 
+.resumebox2{width:560px; height:300px; 
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height:40px;
+}
+.resumebox2 p{color:black; font-family: 'Noto Sans KR', sans-serif;}
+
+.subbox{width:500px; height:200px; 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+
   }
 
-.skills{width:100px; height:100px; 
+.one{width:500px; height:50px; display: flex; flex-direction: row;}
+
+
+.skills{width:120px; height:50px; 
   display: flex;
   justify-content: flex-start;
   }
-.skills>img{max-width:60px; max-height:60px;}
+
+
+
+  ul.skilllist {
+    float: left;
+    width: 100%;
+    }
+  
+  .skill-percent { 
+    float: right; 
+    }
+  
+  li.skill-bar {
+    background-color: #7BC673;
+    color: #FFF;
+    font: bold 12px/23px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin-bottom: 3px;
+    padding: 2px 8px;
+    width: 60px;	
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+       -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);        
+    }  
+
 
 #section4{display: flex; flex-wrap: wrap;
             justify-content: space-evenly;
@@ -211,7 +267,25 @@ flex-direction: column;}
           }
 
 #section6{display: flex; flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  background-color:gold;}
+}
+
+#section6 p{font-family: 'Noto Sans KR', sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height:35px;}
+
+  #section4 p{font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height:35px;}
+
+    #section5 p{font-family: 'Noto Sans KR', sans-serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height:35px;}
+      
+  .uiuxbox{width:60%; height: 70%; }
+  .uiuxbox img{width:100%; height:auto;}
 
